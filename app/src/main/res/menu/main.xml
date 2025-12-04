@@ -2,18 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/plusItem"
         android:orderInCategory="100"
         android:title="+" />
     <item
+        android:id="@+id/minisItem"
         android:orderInCategory="200"
         android:title="-" />
     <item
+        android:id="@+id/multItem"
         android:orderInCategory="300"
         android:title="*" />
     <item
+        android:id="@+id/divItem"
         android:orderInCategory="400"
         android:title="/" />
     <item
+        android:id="@+id/clearItem"
         android:orderInCategory="500"
         android:title="C" />
 </menu>

@@ -14,11 +14,12 @@
         android:layout_weight="1" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="3"
-        android:gravity="center" />
+        android:gravity="center"
+        android:textSize="35dp" />
 
     <Space
         android:layout_width="match_parent"
@@ -26,14 +27,15 @@
         android:layout_weight="1" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/etOp1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:ems="10"
         android:gravity="center"
         android:hint="op1"
-        android:inputType="numberDecimal|numberSigned" />
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="35dp" />
 
     <Space
         android:layout_width="match_parent"
@@ -41,14 +43,15 @@
         android:layout_weight="1" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/etOp2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:ems="10"
         android:gravity="center"
         android:hint="op2"
-        android:inputType="numberDecimal|numberSigned" />
+        android:inputType="numberDecimal|numberSigned"
+        android:textSize="35dp" />
 
     <Space
         android:layout_width="match_parent"
