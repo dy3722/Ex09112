@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         tv = findViewById(R.id.tv);
         etOp1 = findViewById(R.id.etOp1);
         etOp2 = findViewById(R.id.etOp2);
+
     }
 
     @Override
