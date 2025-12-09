@@ -30,28 +30,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main,menu);
-
         return super.onCreateOptionsMenu(menu);
     }
 
-    public boolean validEditText()
+    public boolean validEditText(String str)
     {
-        try
-        {
-            Double.parseDouble(etOp1.getText().toString());
-            Double.parseDouble(etOp2.getText().toString());
-        }
-        catch (NumberFormatException e)
-        {
+        if (str == null || str.isEmpty()) {
             return false;
         }
-        return true;
+        String regex = "^[+-]?(\\d+|\\d*\\.\\d+|\\d+\\.)$";
+        return str.matches(regex);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-        if(validEditText())
+        if(validEditText(etOp1.getText().toString()) && validEditText(etOp2.getText().toString()))
         {
             if (id == R.id.plusItem)
             {
